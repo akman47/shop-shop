@@ -8,6 +8,8 @@ const { Provider } = StoreContext; // make state data passed as prop available t
 const StoreProvider = ({ value = [], ...props }) => {
     const [state, dispatch] = useProductReducer({
         products: [],
+        cart: [],
+        cartOpen: false,
         categories: [],
         currentCategory: ''
     });
